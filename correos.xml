@@ -1,0 +1,20 @@
+<Bandeja>  
+   <Correo id="corr1">  
+      <Remitente>Alvaro Torrente</Remitente>  
+      <Asunto>Estoy muy feliz</Asunto>  
+      <Mensaje>Estoy tan triste que me limpio las lagrimas con una lija para que duela</Mensaje>  
+	  <Identificador>1</Identificador>
+   </Correo>  
+  <Correo id="corr2">  
+      <Remitente>Mari Carmen</Remitente>  
+      <Asunto>Estoy feliz</Asunto>  
+      <Mensaje>Estoy feliz porque he visto a alvaro limpiarse la cara con una lija y me hace gracia</Mensaje>  
+	  <Identificador>2</Identificador>
+   </Correo>  
+   <Correo id="corr3">  
+      <Remitente>Mari Carmen</Remitente>  
+      <Asunto>Estoy feliz</Asunto>  
+      <Mensaje>Estoy feliz porque he visto a alvaro limpiarse la cara con una lija y me hace gracia</Mensaje>  
+	  <Identificador>3</Identificador>
+   </Correo> 
+</Bandeja>  

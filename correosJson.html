@@ -1,0 +1,59 @@
+<html>
+<head>
+<script>
+var divCorreo;
+var divRem;
+var divAsunto;
+var divMensaje;
+var i=0;
+var rem;
+var asunto;
+var mens;
+function generarCorreo(archivo){
+	var jsonObj = JSON.parse(archivo.responseText);
+	for (var j=0;j<jsonObj.correos.length;j++){
+		//if(jsonObj.correos.Remitente){
+			j=i;
+			divCorreo=document.createElement("div");
+			divCorreo.setAttribute("id", "corr"+i);
+			divRem=document.createElement("h3");
+			rem = document.createTextNode("Remitente: "+jsonObj.correos[i].Remitente);
+			divRem.appendChild(rem); 
+			divAsunto=document.createElement("h2");
+			asunto = document.createTextNode("Asunto: "+jsonObj.correos[i].Asunto);
+			divAsunto.appendChild(asunto);
+			divMensaje=document.createElement("p");
+			mens = document.createTextNode("Mensaje: "+jsonObj.correos[i].Mensaje);
+			divMensaje.appendChild(mens);
+			divCorreo.appendChild(divRem);
+			divCorreo.appendChild(divAsunto);
+			divCorreo.appendChild(divMensaje);
+			divCorreo.style.cssText = 'border:1px solid red; width:400px; margin:2px;padding:2px;';
+			document.body.appendChild(divCorreo);
+			i++;
+		//}else{
+			
+		//}
+	}
+}
+function inicio() {
+	setInterval(loadDoc, 3000);
+}
+function loadDoc() {
+  var data_file = "correos.json";
+  var http_request = new XMLHttpRequest();
+  http_request.onreadystatechange = function(){
+    if (http_request.readyState == 4  ){
+        
+			generarCorreo(this);
+        }
+  }
+  http_request.open("GET", data_file, true);
+  http_request.send();
+}
+</script>
+</head>
+<body onload="inicio()">
+<label id="demo"></label>
+</body>
+</html>

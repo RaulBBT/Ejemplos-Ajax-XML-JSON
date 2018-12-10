@@ -1,0 +1,19 @@
+{
+  "correos": [
+    {
+      "Remitente": "Alvaro",
+      "Asunto": "Estoy feliz",
+	  "Mensaje": "jajajajajajaajajajaja"
+    },
+    {
+      "Remitente": "Maricarmen",
+      "Asunto": "Estoy muy feliz",
+	  "Mensaje": "jajajajajajaajajajaja2"
+    },
+    {
+      "Remitente": "Blanca",
+      "Asunto": "Estoy",
+	  "Mensaje": "jajajajajajaajajajaja2"
+    }
+  ]
+}
